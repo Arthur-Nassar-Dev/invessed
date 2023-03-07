@@ -71,7 +71,6 @@ git init <span class="text-gray-500"># initialise git for your new project</span
 
 <script lang="ts">
 import { defineComponent, toRef, ref } from 'vue'
-import { globalState } from '../store'
 
 export default defineComponent({
   props: {
@@ -83,7 +82,6 @@ export default defineComponent({
 
   setup() {
     return {
-      count: toRef(globalState, 'count'),
       name: ref(''),
     }
   },
