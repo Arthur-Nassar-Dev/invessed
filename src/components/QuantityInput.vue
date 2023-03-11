@@ -39,7 +39,7 @@ const clearInput = () => {
     <div class="absolute inset-y-0 right-0 flex items-center pr-2">
       <img
         width="15"
-        src="trashBin.svg"
+        src="/trashBin.svg"
         alt="trash bin icon"
         @click="clearInput"
       >

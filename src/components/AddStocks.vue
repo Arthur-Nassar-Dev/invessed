@@ -41,7 +41,7 @@ const addStock = (symbol: string) => {
         >
         <div class="absolute inset-y-0 right-0 flex items-center pr-3">
           <img
-            src="searchIcon.svg"
+            src="/searchIcon.svg"
             alt="search icon"
             width="20"
           >
@@ -54,7 +54,7 @@ const addStock = (symbol: string) => {
         >
           <div class="pl-4 py-2 flex">
             <img
-              src="addIcon.svg"
+              src="/addIcon.svg"
               alt="add icon"
               width="20"
               class="mr-4 cursor-pointer"

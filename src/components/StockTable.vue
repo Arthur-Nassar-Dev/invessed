@@ -5,7 +5,7 @@ import useAppStore from '../store'
 import { CurrencyTypes} from '../utils/types/index'
 
 const store = useAppStore()
-const CurrencyTypesEnum: typeof CurrencyTypes = CurrencyTypes
+const CurrencyTypesEnum: any = CurrencyTypes
 const getProgress = (stockPrice: number, stocksTotalSum: number): string => {
   return ((stockPrice * 100) / stocksTotalSum).toFixed(0)
 }
