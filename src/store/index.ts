@@ -16,7 +16,7 @@ export const useAppStore = defineStore('appStore', () => {
     return stockInfo.value.map(item => {
       const newItem = {...item}
       newItem['05. price'] = ((+item['05. price'] * exchangeRate.value).toFixed(2))
-      const itemTotal = (item.quantity || 0) * (+item['05. price'])
+      const itemTotal = (newItem.quantity || 0) * +newItem['05. price']
       return {
         ...newItem,
         total: itemTotal,
