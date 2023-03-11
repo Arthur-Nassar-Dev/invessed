@@ -37,7 +37,7 @@ const clearInput = () => {
       v-model.number="stock"
     />
     <div class="absolute inset-y-0 right-0 flex items-center pr-2">
-      <img @click="clearInput" width="15" src="trashBin.svg" alt="trash bin icon">
+      <img @click="clearInput" width="15" src="/trashBin.svg" alt="trash bin icon">
     </div>
   </div>
 </template>
