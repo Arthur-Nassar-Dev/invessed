@@ -3,9 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import { routes } from './routes'
 import './index.css'
+import { createPinia } from 'pinia'
 
+const pinia = createPinia()
 const app = createApp(App)
-
+	
 const router = createRouter({
   history: createWebHistory(),
   routes: import.meta.hot ? [] : routes,
@@ -28,6 +30,6 @@ if (import.meta.hot) {
     router.replace('')
   })
 }
-
+app.use(pinia)
 app.use(router)
 app.mount('#app')
